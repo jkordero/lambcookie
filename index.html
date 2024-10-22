@@ -1,24 +1,32 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <style>
         body {
-          margin: 0; /* Elimina los márgenes para que la imagen cubra toda la pantalla */
+          margin: 0; /* Elimina los mÃ¡rgenes para que la imagen cubra toda la pantalla */
           background-image: url('img/background.png');
           background-repeat: no-repeat;
-          background-size: cover; /* La imagen cubrirá toda la página */
-          background-attachment: fixed; /* La imagen se mantendrá fija al hacer scroll */
-          background-position: center; /* La imagen se centrará */
+          background-size: cover; /* La imagen cubrirÃ¡ toda la pÃ¡gina */
+          background-attachment: fixed; /* La imagen se mantendrÃ¡ fija al hacer scroll */
+          background-position: center; /* La imagen se centrarÃ¡ */
         }
         p {
           color: white; /* Cambia el color del texto a blanco */
-          font-size: 24px; /* Puedes ajustar el tamaño del texto si es necesario */
+          font-size: 24px; /* Puedes ajustar el tamaÃ±o del texto si es necesario */
         }
         .auto-style1 {
 		color: #FFFFFF;
 	}
 	.auto-style2 {
 		text-align: center;
+	}
+        .auto-style3 {
+		border-style: solid;
+		border-width: 1px;
+	}
+        .auto-style5 {
+		color: #FFFFFF;
+		text-align: right;
 	}
         </style>
 </head>
@@ -32,11 +40,19 @@
 
 	<br>
 	<form id="form1" runat="server">
-		<div class="auto-style2">
-		    <span class="auto-style1">
-			<label id="Label1">Escribe tu nombre: </label></span><input name="Text1" type="text"><br>
-			<br>
-			<input name="Button1" type="button" value="Aceptar"></div>&nbsp;</div>
+		<table class="auto-style3" style="width: 50%" align="center">
+			<tr>
+				<td class="auto-style5" style="height: 29px; width: 621px"><label id="Label1">eMail: </label></td>
+				<td class="auto-style2" style="height: 29px; width: 649px">
+				<input name="Text1" type="text"></td>
+			</tr>
+			<tr>
+				<td style="width: 621px" class="auto-style5"><label id="Label2">Contraseña: </label></td>
+				<td class="auto-style2" style="width: 649px">
+				<input name="Text2" type="text"></td>
+			</tr>
+		</table>
+			<input name="Button1" type="button" value="Aceptar">&nbsp;</div>
 	</form>
 
 	</div>
